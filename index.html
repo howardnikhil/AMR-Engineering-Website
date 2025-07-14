@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMR Engineering</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light blue-gray background */
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md py-4 px-6 md:px-10 sticky top-0 z-50">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-700 rounded-md">AMR Engineering</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-600 hover:text-blue-700 transition duration-300 rounded-md">Home</a>
+                <a href="#about" class="text-gray-600 hover:text-blue-700 transition duration-300 rounded-md">About Us</a>
+                <a href="#products" class="text-gray-600 hover:text-blue-700 transition duration-300 rounded-md">Products</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-700 transition duration-300 rounded-md">Contact Us</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-blue-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-4 6h4"></path>
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+            <a href="#home" class="block px-4 py-2 text-gray-600 hover:bg-blue-100 rounded-md">Home</a>
+            <a href="#about" class="block px-4 py-2 text-gray-600 hover:bg-blue-100 rounded-md">About Us</a>
+            <a href="#products" class="block px-4 py-2 text-gray-600 hover:bg-blue-100 rounded-md">Products</a>
+            <a href="#contact" class="block px-4 py-2 text-gray-600 hover:bg-blue-100 rounded-md">Contact Us</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Section (Hero) -->
+        <section id="home" class="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 md:py-32 rounded-b-lg overflow-hidden">
+            <div class="container mx-auto text-center px-6 md:px-10">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 animate-fade-in-down">
+                    Innovating Solutions for a Sustainable Future
+                </h1>
+                <p class="text-lg md:text-xl mb-10 opacity-90 animate-fade-in-up">
+                    AMR Engineering: Your trusted partner in Water Treatment and Road Construction.
+                </p>
+                <a href="#products" class="bg-white text-blue-700 hover:bg-blue-100 py-3 px-8 rounded-full text-lg font-semibold shadow-lg transition duration-300 transform hover:scale-105 inline-block">
+                    Explore Our Products
+                </a>
+            </div>
+            <!-- Background shapes for visual appeal -->
+            <div class="absolute inset-0 z-0 opacity-10">
+                <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+                    <circle cx="20" cy="20" r="15" fill="currentColor" class="text-blue-500"></circle>
+                    <circle cx="80" cy="30" r="20" fill="currentColor" class="text-blue-400"></circle>
+                    <circle cx="50" cy="70" r="25" fill="currentColor" class="text-blue-500"></circle>
+                </svg>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-16 md:py-24 bg-white rounded-lg shadow-inner mt-8 mx-auto max-w-6xl px-6 md:px-10">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold text-center text-blue-700 mb-12">About AMR Engineering</h2>
+                <div class="flex flex-col md:flex-row items-center md:space-x-12">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <!-- Placeholder Image -->
+                        <img src="https://placehold.co/600x400/e0f2fe/000000?text=AMR+Engineering" alt="AMR Engineering Office" class="rounded-lg shadow-xl w-full h-auto object-cover">
+                    </div>
+                    <div class="md:w-1/2 text-lg leading-relaxed text-gray-700">
+                        <p class="mb-4">
+                            AMR Engineering is a leading enterprise dedicated to delivering high-quality solutions in water treatment and civil construction. With a commitment to innovation and sustainability, we strive to meet the evolving needs of industries and communities.
+                        </p>
+                        <p class="mb-4">
+                            Our expertise spans across various aspects of water purification, from designing and implementing industrial-scale treatment plants to providing compact and efficient solutions for diverse applications. We understand the critical importance of clean water and are passionate about contributing to a healthier environment.
+                        </p>
+                        <p>
+                            Beyond water treatment, AMR Engineering is also a distinguished Road Construction Contractor, contributing to robust infrastructure development. Our team of experienced professionals ensures project excellence, adhering to the highest standards of quality and safety.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="py-16 md:py-24 bg-blue-50 rounded-lg shadow-inner mt-8 mx-auto max-w-6xl px-6 md:px-10">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold text-center text-blue-700 mb-12">Our Products & Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                    <!-- Product Card 1: Water Treatment Plant -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center transform hover:scale-105 transition duration-300">
+                        <div class="text-blue-600 mb-4">
+                            <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21.5c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8zM12 11v6m-3-3h6"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-3">Water Treatment Plant</h3>
+                        <p class="text-gray-600 mb-4">
+                            Comprehensive solutions for purifying water for various applications, ensuring safety and compliance.
+                        </p>
+                        <a href="#contact" class="text-blue-600 hover:underline font-medium">Learn More</a>
+                    </div>
+
+                    <!-- Product Card 2: Industrial Water Treatment Plant -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center transform hover:scale-105 transition duration-300">
+                        <div class="text-blue-600 mb-4">
+                            <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2H7a2 2 0 00-2 2v2m7-7V3"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-3">Industrial Water Treatment Plant</h3>
+                        <p class="text-gray-600 mb-4">
+                            Tailored systems designed to handle large volumes and specific contaminants for industrial processes.
+                        </p>
+                        <a href="#contact" class="text-blue-600 hover:underline font-medium">Learn More</a>
+                    </div>
+
+                    <!-- Product Card 3: Compact Water Treatment Plants -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center transform hover:scale-105 transition duration-300">
+                        <div class="text-blue-600 mb-4">
+                            <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-3">Compact Water Treatment Plants</h3>
+                        <p class="text-gray-600 mb-4">
+                            Efficient and space-saving units ideal for smaller scale applications or remote locations.
+                        </p>
+                        <a href="#contact" class="text-blue-600 hover:underline font-medium">Learn More</a>
+                    </div>
+
+                    <!-- Product Card 4: Raw Water Treatment Plants -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center transform hover:scale-105 transition duration-300">
+                        <div class="text-blue-600 mb-4">
+                            <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v18m-6-6h12a2 2 0 002-2V9a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-3">Raw Water Treatment Plants</h3>
+                        <p class="text-gray-600 mb-4">
+                            Systems designed to process untreated water sources, preparing them for various uses.
+                        </p>
+                        <a href="#contact" class="text-blue-600 hover:underline font-medium">Learn More</a>
+                    </div>
+
+                    <!-- Product Card 5: Road Construction Contractor -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center transform hover:scale-105 transition duration-300">
+                        <div class="text-blue-600 mb-4">
+                            <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6m0 0h18m0 0V9a2 2 0 00-2-2h-3.28a2 2 0 00-1.72 1L9 19z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-3">Road Construction Contractor</h3>
+                        <p class="text-gray-600 mb-4">
+                            Expert services in building and maintaining high-quality roads and infrastructure.
+                        </p>
+                        <a href="#contact" class="text-blue-600 hover:underline font-medium">Learn More</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="py-16 md:py-24 bg-white rounded-lg shadow-inner mt-8 mx-auto max-w-6xl px-6 md:px-10 mb-8">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold text-center text-blue-700 mb-12">Get in Touch</h2>
+                <div class="flex flex-col md:flex-row justify-center items-start md:space-x-12">
+                    <div class="md:w-1/2 mb-10 md:mb-0">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-6">Contact Information</h3>
+                        <p class="text-lg text-gray-700 mb-4">
+                            <strong>Address:</strong> [Your Company Address Here], [City, State, Pincode]
+                        </p>
+                        <p class="text-lg text-gray-700 mb-4">
+                            <strong>Phone:</strong> <a href="tel:+91XXXXXXXXXX" class="text-blue-600 hover:underline">+91 XXXXXXXXXX</a>
+                        </p>
+                        <p class="text-lg text-gray-700 mb-4">
+                            <strong>Email:</strong> <a href="mailto:info@amrengineering.com" class="text-blue-600 hover:underline">info@amrengineering.com</a>
+                        </p>
+                        <p class="text-lg text-gray-700">
+                            Feel free to reach out to us for any inquiries or project discussions. We look forward to hearing from you!
+                        </p>
+                    </div>
+                    <div class="md:w-1/2 w-full">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-6">Send Us a Message</h3>
+                        <form class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-lg font-medium text-gray-700 mb-2">Your Name</label>
+                                <input type="text" id="name" name="name" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 text-lg" placeholder="John Doe">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-lg font-medium text-gray-700 mb-2">Your Email</label>
+                                <input type="email" id="email" name="email" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 text-lg" placeholder="john.doe@example.com">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-lg font-medium text-gray-700 mb-2">Message</label>
+                                <textarea id="message" name="message" rows="5" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 text-lg" placeholder="Your message here..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-blue-700 text-white py-3 px-6 rounded-md text-lg font-semibold hover:bg-blue-800 transition duration-300 shadow-md transform hover:scale-105">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8 rounded-t-lg">
+        <div class="container mx-auto text-center px-6 md:px-10">
+            <p>&copy; 2025 AMR Engineering. All rights reserved.</p>
+            <p class="mt-2 text-sm">Designed with <span class="text-red-500">&hearts;</span> by HowNik Technologies</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
